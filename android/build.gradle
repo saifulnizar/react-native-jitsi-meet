@@ -46,6 +46,10 @@ repositories {
 
 dependencies {
     implementation ('org.jitsi.react:jitsi-meet-sdk:3.8.0') {
+       exclude group: 'com.facebook.react',module:'react-native-locale-detector'
+       exclude group: 'com.facebook.react',module:'react-native-community-async-storage'
+       exclude group: 'com.facebook',module:'hermes'
+       exclude group: 'com.facebook.react',module:'react-native-community_netinfo'
       transitive = true
     }
 }
